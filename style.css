@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 3rem 0 4rem 0;
+    color: tomato;
+}
+
+
+/*grid-template-columns and grid-template-rows*/
+
+        .grid-container{
+            display: grid;
+            /*grid-template-columns: repeat(3, 1fr);*/
+            grid-template-columns: 15% 2fr 1.2fr 1.5fr; /* repeat(4, 15% 2fr 1.2fr 1.5fr) */
+            grid-template-rows: 150px 100px;
+            gap: 1rem;
+        }
+        .grid-container > div{
+           display: flex;
+           font-size: 1rem;
+           background-color: #a1284a;
+           color: #fff;
+           justify-content: center;
+           align-items: center;
+           padding: 1.5rem;
+           margin: 0.7rem;
+           
+        }
+
+
+        /*grid-template-columns and grid-template-rows and grid-template-areas*/
+
+        .grid-container-two{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas: 
+            "hea hea"
+            "sid con"
+            "foo foo"
+            "hea1 sid1"
+            "con1 con1"
+            "foo1 foo1"
+            ;
+            gap: 1rem;
+        }
+        .grid-container-two > div{
+          /*  background-color: aquamarine;*/
+            padding: 2rem;
+            margin: 2rem 0 0 0;
+        }
+        .hea{
+            grid-area: hea;
+            background-color: aquamarine;
+        }
+        .sid{
+            grid-area: sid;
+            background-color: rgb(127, 255, 133);
+        }
+        .con{
+            grid-area: con;
+            background-color: rgb(218, 173, 23);
+        }
+        .foo{
+            grid-area: foo;
+            background-color: #d30ba1;
+        }
+        .hea1{
+            background-color: aqua;
+            grid-area: hea1;
+        }
+        .sid1{
+            background-color: rgb(219, 135, 9);
+            grid-area: sid1;
+        }
+        .con1{
+            background-color: #0e0bd3b9;
+            grid-area: con1;
+        }
+        .foo1{
+            background-color: #d37c0b;
+            grid-area: foo1;
+        }
+
+        /*grid item spanning*/
+        .grid-colum{
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-template-rows: 150px 120px 200px 180px; /*repeat(4, 150px)*/
+            gap: 1rem;
+        }
+        .grid-colum > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.6rem;
+            background-color: #d30ba1;
+            margin: 2rem 0 0 0;
+            color: #fff;
+        }
+        .item5{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .item7{
+            grid-column: span 3;
+        }
+
+        /*place items*/
+        .grid-container4{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            background-color: white;
+            margin: 2rem;
+            height: 350px;
+            /*justify-items: center;
+            align-items: center;*/
+            place-items: center; /*justify-items: center; and align-items: center;*/
+        }
+        .grid-container4 > div{
+            padding: 20px;
+            border: 1px solid gray;
+        }
