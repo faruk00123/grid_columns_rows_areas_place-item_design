@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid display style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <h1>Grid columns, rows, areas, place-items design</h1>
+    <!--grid-template-columns and grid-template-rows-->
+    <section>
+    <div class="grid-container">
+        <div>leaout 1</div>
+        <div>leaout 2</div>
+        <div>leaout 3</div>
+        <div>leaout 4</div>
+        <div>leaout 5</div>
+        <div>leaout 6</div>
+    </div>
+    </section>
+     
 
+    <!--grid-template-columns and grid-template-rows and grid-template-areas-->
+    <section>
+    <div class="grid-container-two">
+        <div class="hea">leaout 1</div>
+        <div class="sid">leaout 2</div>
+        <div class="con">leaout 3</div>
+        <div class="foo">leaout 4</div>
+        <div class="hea1">leaout 5</div>
+        <div class="sid1">leaout 6</div>
+        <div class="con1">leaout 7</div>
+        <div class="foo1">leaout 8</div>
+    </div>
+    </section>
+
+
+    <!--grid item spanning-->
+    <section>
+    <div class="grid-colum">
+        <div class="item1">leaout 1</div>
+        <div class="item2">leaout 2</div>
+        <div class="item3">leaout 3</div>
+        <div class="item4">leaout 4</div>
+        <div class="item5">leaout 5</div>
+        <div class="item6">leaout 6</div>
+        <div class="item7">leaout 7</div>
+    </div>
+    </section>
+
+    <!--place items-->
+
+    <section>
+    <div class="grid-container4">
+        <div>leaout 1</div>
+        <div>leaout 2</div>
+        <div>leaout 3</div>
+        <div>leaout 4</div>
+        <div>leaout 5</div>
+        <div>leaout 6</div>
+    </div>
+    </section>
+  </main>
+</body>
+</html>
